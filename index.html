@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Product Survey Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1 id="title">Product Survey Form</h1>
+  <p id="derscrpion"> Thank you for taking the time to help us out improve the platform.</p>
+
+  <form id="survey-form">
+
+    <div class="form-div">
+      <label>Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    </div>
+
+    <div class="form-div">
+      <label>E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your E-mail" required>
+    </div>
+
+    <div class="form-div">
+      <label>Age</label>
+      <input type="number" min="1" max="120" id="age" name="age" placeholder="Age" required>
+    </div>
+
+    <div class="form-div">
+
+      <label>How Would you rate your experience with our product ?</label>
+
+      <select id="dropdown" name="dropdown">
+        <option value="">Very Satisfied</option>
+        <option value="">Satisfied</option>
+        <option value="">Disatisfied</option>
+        <option value="">Very Disatisfied</option>
+        <option value="">Neither Agree or Neither Disagree</option>
+      </select>
+    </div>
+
+    <div class="form-div">
+      <label id="label-textarea"> Any Comments or Suggestion</label>
+      <textarea name="suggestion" placeholder="Enter Your Comment HEre..">
+    </textarea>
+    </div>
+
+    <div class="form-div-btn">
+      <input type="submit" value="Submit">
+    </div>
+
+  </form>
+</body>
+
+</html>
